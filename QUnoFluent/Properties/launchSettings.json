@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "QUnoFluent (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "QUnoFluent (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
