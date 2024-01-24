@@ -45,4 +45,11 @@
   <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
   </PropertyGroup>
+
+	<ItemGroup>
+	  <Reference Include="QUnoLibrary">
+	    <HintPath>..\Library\$(Configuration)\QUnoLibrary.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+
 </Project>
