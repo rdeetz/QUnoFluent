@@ -8,15 +8,15 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="1d835b6c-199e-422f-ab91-c687781fc877"
-    Publisher="CN=roger"
-    Version="1.0.0.0" />
+    Name="Mooville.QUno.Fluent.v7"
+    Publisher="CN=Roger Deetz"
+    Version="7.0.1.0" />
 
   <mp:PhoneIdentity PhoneProductId="1d835b6c-199e-422f-ab91-c687781fc877" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>QUnoFluent</DisplayName>
-    <PublisherDisplayName>roger</PublisherDisplayName>
+    <DisplayName>QUno</DisplayName>
+    <PublisherDisplayName>Roger Deetz</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -34,8 +34,8 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="QUnoFluent"
-        Description="QUnoFluent"
+        DisplayName="QUno"
+        Description="An Uno-like card game."
         BackgroundColor="transparent"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png">

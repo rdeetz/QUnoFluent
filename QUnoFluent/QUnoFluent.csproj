@@ -3,13 +3,25 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net7.0-windows10.0.19041.0</TargetFramework>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
-    <RootNamespace>QUnoFluent</RootNamespace>
+    <RootNamespace>Mooville.QUno.Fluent</RootNamespace>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <Platforms>x86;x64;ARM64</Platforms>
     <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
     <PublishProfile>win10-$(Platform).pubxml</PublishProfile>
     <UseWinUI>true</UseWinUI>
     <EnableMsixTooling>true</EnableMsixTooling>
+    <ApplicationIcon>Assets\QUno.ico</ApplicationIcon>
+    <Title>QUno for Windows App SDK</Title>
+    <Description>An Uno-like card game.</Description>
+    <AssemblyVersion>7.0.1</AssemblyVersion>
+    <FileVersion>7.0.1</FileVersion>
+    <PackageProjectUrl>https://www.qunogame.com</PackageProjectUrl>
+    <Copyright>Copyright (c) Roger Deetz. All rights reserved.</Copyright>
+    <PackageId>Mooville.QUno.Fluent</PackageId>
+    <Authors>rdeetz</Authors>
+    <Company>Roger Deetz</Company>
+    <Version>7.0.1</Version>
+    <Product>QUno</Product>
   </PropertyGroup>
 
   <ItemGroup>
