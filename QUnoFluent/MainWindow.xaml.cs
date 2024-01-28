@@ -11,14 +11,7 @@ namespace Mooville.QUno.Fluent
         public MainWindow()
         {
             this.InitializeComponent();
-            this.Title = "QUno for Windows App SDK";
-        }
-
-        private void myButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.myButton.Content = "Clicked";
-
-            return;
+            this.ExtendsContentIntoTitleBar = true;
         }
     }
 }
