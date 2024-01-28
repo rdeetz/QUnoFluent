@@ -13,6 +13,7 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -21,6 +22,23 @@
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="8" Grid.Row="0" Grid.Column="0">
             <TextBlock Style="{StaticResource CaptionTextBlockStyle}">QUno for Windows App SDK</TextBlock>
         </StackPanel>
-        <Rectangle Width="32" Height="32" Margin="32" Fill="LightGray" Grid.Row="1" Grid.Column="0"/>
+        <CommandBar Background="Transparent" IsOpen="False" DefaultLabelPosition="Right" Grid.Row="1" Grid.Column="0">
+            <AppBarButton x:Name="buttonNew" Icon="Add" Label="New Game"/>
+            <AppBarButton x:Name="buttonOpen" Icon="OpenFile" Label="Open Game"/>
+            <AppBarButton x:Name="buttonSave" Icon="Save" Label="Save Game"/>
+            <CommandBar.SecondaryCommands>
+                <AppBarButton Icon="Setting" Label="Settings">
+                    <AppBarButton.KeyboardAccelerators>
+                        <KeyboardAccelerator Modifiers="Control" Key="I" />
+                    </AppBarButton.KeyboardAccelerators>
+                </AppBarButton>
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+        <StackPanel Orientation="Vertical" Margin="16" Grid.Row="2" Grid.Column="0">
+            <TextBlock Text="Welcome"/>
+            <TextBlock Text="to QUno v7"/>
+            <TextBlock Text="on the Windows App SDK"/>
+            <TextBox x:Name="textFile" Width="512" HorizontalAlignment="Left"/>
+        </StackPanel>
     </Grid>
 </Window>
