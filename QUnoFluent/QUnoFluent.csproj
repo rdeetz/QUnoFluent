@@ -13,14 +13,14 @@
     <ApplicationIcon>Assets\QUno.ico</ApplicationIcon>
     <Title>QUno for Windows App SDK</Title>
     <Description>An Uno-like card game.</Description>
-    <AssemblyVersion>7.0.1</AssemblyVersion>
-    <FileVersion>7.0.1</FileVersion>
+    <AssemblyVersion>8.0.1</AssemblyVersion>
+    <FileVersion>8.0.1</FileVersion>
     <PackageProjectUrl>https://www.qunogame.com</PackageProjectUrl>
     <Copyright>Copyright (c) Roger Deetz. All rights reserved.</Copyright>
     <PackageId>Mooville.QUno.Fluent</PackageId>
     <Authors>rdeetz</Authors>
     <Company>Roger Deetz</Company>
-    <Version>7.0.1</Version>
+    <Version>8.0.1</Version>
     <Product>QUno</Product>
   </PropertyGroup>
 
