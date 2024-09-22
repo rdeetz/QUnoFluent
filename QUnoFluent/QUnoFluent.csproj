@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <TargetFramework>net8.0-windows10.0.20348.0</TargetFramework>
     <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <RootNamespace>Mooville.QUno.Fluent</RootNamespace>
     <ApplicationManifest>app.manifest</ApplicationManifest>
@@ -22,6 +22,7 @@
     <Company>Roger Deetz</Company>
     <Version>8.0.1</Version>
     <Product>QUno</Product>
+    <SupportedOSPlatformVersion>10.0.20348.0</SupportedOSPlatformVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -35,7 +36,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.5.240802000" />
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.240829007" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
