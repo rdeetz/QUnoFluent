@@ -6,7 +6,7 @@ An Uno-like card game.
 
 * Windows 11 or Windows 10
 * [Windows App SDK](https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/)
-* [.NET 8 SDK](https://dotnet.microsoft.com/download)
+* [.NET 9 SDK](https://dotnet.microsoft.com/download)
 * Your favorite editor (my favorite editor is [Visual Studio Code](https://code.visualstudio.com/))
 * [Visual Studio 2022](https://visualstudio.microsoft.com/) (I use the Community edition, v17)
 
