@@ -6,6 +6,7 @@ namespace Mooville.QUno.Fluent
 {
     using System;
     using Microsoft.UI.Xaml;
+    using Microsoft.Windows.ApplicationModel.Resources;
     using Windows.Storage.Pickers;
     using WinRT.Interop;
     using Mooville.QUno.Fluent.Model;
@@ -34,6 +35,7 @@ namespace Mooville.QUno.Fluent
 
         private async void ButtonOpen_Click(object sender, RoutedEventArgs e)
         {
+            var resourceLoader = new ResourceLoader();
             var fileOpenPicker = new FileOpenPicker();
 
             var hWnd = WindowNative.GetWindowHandle(this);
@@ -54,7 +56,8 @@ namespace Mooville.QUno.Fluent
             }
             else
             {
-                textFile.Text = "No file selected.";
+                var noFileSelected = resourceLoader.GetString("FileNoFileSelected");
+                textFile.Text = noFileSelected;
             }
 
             return;
