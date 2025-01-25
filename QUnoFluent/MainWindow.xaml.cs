@@ -1,5 +1,5 @@
 // <copyright file="MainWindow.xaml.cs" company="Mooville">
-//   Copyright © 2024 Roger Deetz. All rights reserved.
+//   Copyright © 2025 Roger Deetz. All rights reserved.
 // </copyright>
 
 namespace Mooville.QUno.Fluent
@@ -15,11 +15,13 @@ namespace Mooville.QUno.Fluent
     public sealed partial class MainWindow : Window
     {
         private readonly MainViewModel viewModel;
+        private readonly ResourceLoader resourceLoader;
 
         public MainWindow()
         {
             this.InitializeComponent();
             this.ExtendsContentIntoTitleBar = true;
+            this.resourceLoader = new ResourceLoader();
             this.viewModel = new MainViewModel();
 
             this.buttonOpen.Click += this.ButtonOpen_Click;
@@ -35,7 +37,6 @@ namespace Mooville.QUno.Fluent
 
         private async void ButtonOpen_Click(object sender, RoutedEventArgs e)
         {
-            var resourceLoader = new ResourceLoader();
             var fileOpenPicker = new FileOpenPicker();
 
             var hWnd = WindowNative.GetWindowHandle(this);
@@ -56,7 +57,7 @@ namespace Mooville.QUno.Fluent
             }
             else
             {
-                var noFileSelected = resourceLoader.GetString("FileNoFileSelected");
+                var noFileSelected = this.resourceLoader.GetString("FileNoFileSelected");
                 textFile.Text = noFileSelected;
             }
 
