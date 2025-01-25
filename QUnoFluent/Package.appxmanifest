@@ -42,6 +42,17 @@
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
+      <Extensions>
+        <uap:Extension Category="windows.fileTypeAssociation">
+          <uap:FileTypeAssociation Name="quno">
+            <uap:SupportedFileTypes>
+              <uap:FileType>.quno</uap:FileType>
+            </uap:SupportedFileTypes>
+            <uap:DisplayName>QUno Game</uap:DisplayName>
+            <uap:Logo>Assets\FileIcon256.png</uap:Logo>
+          </uap:FileTypeAssociation>
+        </uap:Extension>
+      </Extensions>
     </Application>
   </Applications>
 
