@@ -7,6 +7,7 @@ namespace Mooville.QUno.Fluent
     using System;
     using Microsoft.UI.Xaml;
     using Microsoft.Windows.ApplicationModel.Resources;
+    using Windows.Storage;
     using Windows.Storage.Pickers;
     using WinRT.Interop;
     using Mooville.QUno.Fluent.Model;
@@ -33,6 +34,16 @@ namespace Mooville.QUno.Fluent
             {
                 return this.viewModel;
             }
+        }
+
+        public async void LoadGameFromPathAsync(string path)
+        {
+            var file = await StorageFile.GetFileFromPathAsync(path);
+            var serializer = new FluentGameSerializer();
+            var game = await serializer.LoadFromFileAsync(file);
+            this.viewModel.OpenGame(game);
+
+            return;
         }
 
         private async void ButtonOpen_Click(object sender, RoutedEventArgs e)
