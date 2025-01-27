@@ -22,6 +22,7 @@ namespace Mooville.QUno.Fluent
         {
             this.InitializeComponent();
             this.ExtendsContentIntoTitleBar = true;
+            this.Title = "QUno for Windows App SDK";
             this.resourceLoader = new ResourceLoader();
             this.viewModel = new MainViewModel();
 
