@@ -25,6 +25,7 @@ namespace Mooville.QUno.Fluent
             this.resourceLoader = new ResourceLoader();
             this.viewModel = new MainViewModel();
 
+            this.buttonNew.Click += this.ButtonNew_Click;
             this.buttonOpen.Click += this.ButtonOpen_Click;
         }
 
@@ -42,6 +43,13 @@ namespace Mooville.QUno.Fluent
             var serializer = new FluentGameSerializer();
             var game = await serializer.LoadFromFileAsync(file);
             this.viewModel.OpenGame(game);
+
+            return;
+        }
+
+        private void ButtonNew_Click(object sender, RoutedEventArgs e)
+        {
+            NotificationManager.SendNotification();
 
             return;
         }

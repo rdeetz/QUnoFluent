@@ -5,6 +5,8 @@
   xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
   xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  xmlns:com="http://schemas.microsoft.com/appx/manifest/com/windows10"
+  xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10"
   IgnorableNamespaces="uap rescap">
 
   <Identity
@@ -52,6 +54,16 @@
             <uap:Logo>Assets\FileIcon256.png</uap:Logo>
           </uap:FileTypeAssociation>
         </uap:Extension>
+        <desktop:Extension Category="windows.toastNotificationActivation">
+          <desktop:ToastNotificationActivation ToastActivatorCLSID="5faaa9cb-2bff-459a-b585-f3044c8d9b69" />
+        </desktop:Extension>
+        <com:Extension Category="windows.comServer">
+          <com:ComServer>
+            <com:ExeServer Executable="QUnoFluent\QUnoFluent.exe" DisplayName="QUno" Arguments="----AppNotificationActivated:">
+              <com:Class Id="5faaa9cb-2bff-459a-b585-f3044c8d9b69" />
+            </com:ExeServer>
+          </com:ComServer>
+        </com:Extension>
       </Extensions>
     </Application>
   </Applications>
